@@ -4,11 +4,11 @@ namespace Supermarket_Git
 {
     class Product
     {
-        public string Name;
-        public string Size;
-        public int Amount;
         public DateTime ExpirationDate;
         public int Price;
+        public string Name;
+        public string Size;
+        public int Amount;        
 
         public Product(string Name, string Size, int Amount, int Price, DateTime ExpirationDate)
         {
