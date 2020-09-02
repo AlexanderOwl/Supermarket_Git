@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Supermarket_Git", "Supermarket_Git\Supermarket_Git.csproj", "{409E782F-2E71-4CFB-9D57-10F564DA26BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{409E782F-2E71-4CFB-9D57-10F564DA26BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{409E782F-2E71-4CFB-9D57-10F564DA26BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{409E782F-2E71-4CFB-9D57-10F564DA26BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{409E782F-2E71-4CFB-9D57-10F564DA26BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {510CB07F-CC61-4346-8488-329A1E99727C}
+	EndGlobalSection
+EndGlobal
