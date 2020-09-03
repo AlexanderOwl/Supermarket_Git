@@ -10,7 +10,16 @@ namespace Supermarket_Git
         public string Size;
         public int Amount;        
 
-        public Product(string Name, string Size, int Amount, int Price, DateTime ExpirationDate)
+        //public Product(string Name, string Size, int Amount, int Price, DateTime ExpirationDate)
+        //{
+        //    this.Name = Name;
+        //    this.Size = Size;
+        //    this.Amount = Amount;
+        //    this.Price = Price;
+        //    this.ExpirationDate = ExpirationDate;
+        //}
+
+        public Product()
         {
             this.Name = Name;
             this.Size = Size;
