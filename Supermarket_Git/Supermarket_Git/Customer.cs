@@ -23,4 +23,37 @@ namespace Supermarket_Git
         }
 
     }
+    static List<Product> ShopingListGenerator(List<Product> uvailableShopProducts)
+    {
+        int minNumOfPositions = uvailableShopProducts.Count / 2;
+        int maxNumOfPositions = uvailableShopProducts.Count;
+        Random rdm = new Random();
+        int NumOfPositions = rdm.Next(minNumOfPositions, maxNumOfPositions);
+        Random randomOrderBy = new Random();
+        List<Product> shopingList = uvailableShopProducts.OrderBy(x => randomOrderBy.Next()).ToList();
+        shopingList.RemoveRange(0, NumOfPositions);
+        Random amountRandom = new Random((int)DateTime.Now.Ticks);
+        foreach (var product in shopingList)
+        {
+
+            foreach (var storageProduct in uvailableShopProducts)
+            {
+                if (product == storageProduct)
+                {
+                    product.Amount = amountRandom.Next(1, storageProduct.Amount);
+                    Thread.Sleep(20);
+                    break;
+                }
+            }
+        }
+        return shopingList;
+    }
+
+    int AmountGenerator(int min, int max)
+    {
+        Random rdm = new Random();
+        int amount = rdm.Next(min, max);
+        return amount;
+    }
+}
 }
