@@ -11,8 +11,8 @@ namespace Supermarket_Git
         static DateTime date = new DateTime();
         static void Main(string[] args)
         {
-            Shop shop = new Shop();
-            List<Product> productsInShop = new List<Product>();
+            Shop store = new Shop();
+            List<Product> productsInStore = new List<Product>();
             List<Customer> customers = new List<Customer>();
             date = DateTime.Today;
 
@@ -20,7 +20,7 @@ namespace Supermarket_Git
             {
                 do
                 {
-                    productsInShop = shop.Menu(productsInShop, ref date, customers);
+                    productsInStore = store.Menu(productsInStore, ref date, customers);
                     Console.Clear();
                 } while (true);
             }
