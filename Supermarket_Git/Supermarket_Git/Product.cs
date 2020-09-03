@@ -18,5 +18,7 @@ namespace Supermarket_Git
             this.Price = Price;
             this.ExpirationDate = ExpirationDate;
         }
+
+        //additional features
     }
 }
