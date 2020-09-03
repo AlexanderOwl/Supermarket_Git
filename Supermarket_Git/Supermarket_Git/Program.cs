@@ -10,6 +10,7 @@ namespace Supermarket_Git
     {
         static void Main(string[] args)
         {
+            Product prod = new Product();
         }
     }
 }
